@@ -27,19 +27,19 @@ public class WorldClock {
     }
 
     public ZonedDateTime getNowDateTimeForLA() {
-        return ZonedDateTime.now(ZoneId.of("America/New_York"));
+        return ZonedDateTime.now(ZoneId.of("America/Los_Angeles"));
     }
 
     public ZonedDateTime getNowDateTimeForLondon() {
-        return null;
+        return ZonedDateTime.now(ZoneId.of("Europe/London"));
     }
 
     public ZonedDateTime getNowDateTimeForMoscow() {
-        return null;
+        return ZonedDateTime.now(ZoneId.of("Europe/Moscow"));
     }
 
     public ZonedDateTime getNowDateTimeForTokyo() {
-        return null;
+        return ZonedDateTime.now(ZoneId.of("Asia/Tokyo"));
     }
 
 
