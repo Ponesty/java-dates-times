@@ -75,7 +75,7 @@ public class CalendarHelper {
         int age = nowLocalDate.getYear() - birthdayLocalDate.getYear() + 1;
         long remainingDay2 =nowLocalDate.until(birthdayLocalDate.plusYears(age),DAYS);
          //Display the remainingDay between the current day and the birthday
-        System.out.println("There are " + remainingDay2 + " days remaining before your " + age + "th birthday (" + formatter.format(birthdayLocalDate) + ")");
+        System.out.println("There are " + remainingDay2 + " days remaining before your " + age + "th birthday (" + formatter.format(birthdayLocalDate.plusYears(age)) + ")");
     }
 
 
